@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feedback form</title>
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
-
 <body>
-  <load
-    src="./header.html"
-    highlight-curr="active"
-  />
+    <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link {=$highlight-act2}" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {=$highlight-act}" href="./1-gallery.html" highlight-act="active">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active {=$highlight-curr}" href="./2-form.html">Form</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     <form class="feedback-form" autocomplete="off">
         <label>
             Email
@@ -24,6 +35,5 @@
         </label>
         <button type="submit">Submit</button>
     </form>
-
     <script src="./js/2-form.js" type="module"></script>
 </body>
